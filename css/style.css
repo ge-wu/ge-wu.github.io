@@ -1608,13 +1608,13 @@ pre .javascript .function {
   position: relative;
 }
 .side-tools-container .tools-item {
-  width: 32px;
-  height: 32px;
-  font-size: 1.1rem;
+  width: 0px;
+  height: 0px;
+  font-size: 0rem;
   margin-bottom: 3px;
   cursor: pointer;
   border-right: none;
-  border-radius: 1px;
+  border-radius: 0px;
   box-shadow: 1px 1px 3px var(--shadow-color);
   color: var(--default-text-color);
   background: var(--background-color);
@@ -1632,14 +1632,14 @@ pre .javascript .function {
 }
 @media (max-width: 780px) {
   .side-tools-container .tools-item {
-    width: 28.8px;
-    height: 28.8px;
-    font-size: 0.99rem;
+    width: 0px;
+    height: 0px;
+    font-size: 0rem;
     margin-bottom: 2px;
   }
 }
 .side-tools-container .tools-item.rss a {
-  border-radius: 1px;
+  border-radius: 0px;
   width: 100%;
   height: 100%;
 }
