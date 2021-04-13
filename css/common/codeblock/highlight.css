@@ -206,7 +206,7 @@ code {
   border-radius: 2px;
   font-size: 0.96rem;
   color: var(--code-foreground);
-  background: var(--code-background);
+  background: #f00;
 }
 pre {
   padding: 10px;
