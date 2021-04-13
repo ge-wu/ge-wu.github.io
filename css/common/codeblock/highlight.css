@@ -206,7 +206,7 @@ code {
   border-radius: 2px;
   font-size: 0.96rem;
   color: var(--code-foreground);
-  background: #f00;
+  background: transparent;
 }
 pre {
   padding: 10px;
