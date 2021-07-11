@@ -198,7 +198,7 @@
 <h1 id="5802-Count-Good-Numbers"><a href="#5802-Count-Good-Numbers" class="headerlink" title="5802. Count Good Numbers"></a><a class="link"   target="_blank" rel="noopener" href="https://leetcode.com/contest/weekly-contest-248/problems/count-good-numbers/" >5802. Count Good Numbers<i class="fas fa-external-link-alt"></i></a></h1><p>Basic idea is counting. Five candidates for even indices, and four candidates for odd indices. That is, <code>(5x4x5x...)%mod</code>. In general, there are <code>ceil(n/2)</code> (in case <code>n</code> is odd) five’s and <code>n/2</code> four’s. The tricky part is <code>n</code> can be <code>10^15</code>, and the <code>pow()</code> from math library will give us TLE. </p>
 <p>Note that for <code>4^10</code>, we can convert this to <code>(1024)^2</code>, hence the time complexity is <code>O(log n)</code>.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> mod 1000000007</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">countGoodNumbers</span><span class="params">(ll n)</span> </span>&#123;</span><br><span class="line">        ll x = <span class="built_in">ceil</span>(<span class="number">1.0</span> * n / <span class="number">2</span>), y = n / <span class="number">2</span>;</span><br><span class="line">        ll a = <span class="built_in">fastPower</span>(<span class="number">5</span>, x), b = <span class="built_in">fastPower</span>(<span class="number">4</span>, y);</span><br><span class="line">        <span class="keyword">return</span> (a * b) % mod;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">fastPower</span><span class="params">(ll b, ll p)</span> </span>&#123;</span><br><span class="line">        ll ans = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (p) &#123;</span><br><span class="line">            <span class="keyword">if</span> (p &amp; <span class="number">1</span>) &#123;</span><br><span class="line">                ans = (ans * b) % mod;</span><br><span class="line">            &#125;</span><br><span class="line">            b = (b * b) % mod;</span><br><span class="line">            p /= <span class="number">2</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h1 id="5803-Longest-Common-Subpath"><a href="#5803-Longest-Common-Subpath" class="headerlink" title="5803. Longest Common Subpath"></a>5803. Longest Common Subpath</h1><p>DNF. I will come back later. </p>
+<h1 id="5803-Longest-Common-Subpath"><a href="#5803-Longest-Common-Subpath" class="headerlink" title="5803. Longest Common Subpath"></a><a class="link"   target="_blank" rel="noopener" href="https://leetcode.com/contest/weekly-contest-248/problems/longest-common-subpath/" >5803. Longest Common Subpath<i class="fas fa-external-link-alt"></i></a></h1><p>DNF</p>
 
         </div>
 
@@ -206,6 +206,21 @@
 
         
             <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2021/07/10/Biweekly-Contest-56/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Biweekly Contest 56</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
                 
                 
                     <div class="article-next">
